@@ -6,6 +6,16 @@ TagManager:
   tags:
   - Ground
   - KillArea
+  - RedOrbPickupable
+  - OrbKillArea
+  - RedEnemy
+  - RedOrbThrowable
+  - GreenOrbPickupable
+  - GreenOrbThrowable
+  - BlueOrbPickupable
+  - BlueOrbThrowable
+  - BlueEnemy
+  - GreenEnemy
   layers:
   - Default
   - TransparentFX

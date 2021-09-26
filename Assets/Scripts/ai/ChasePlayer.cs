@@ -7,6 +7,7 @@ public class ChasePlayer : MonoBehaviour
 {
     [SerializeField] private GameObject player;
 
+    [SerializeField] private float dist;
     private NavMeshAgent agent;
     
     private void Start()
@@ -16,6 +17,15 @@ public class ChasePlayer : MonoBehaviour
 
     private void Update()
     {
-        agent.destination = player.transform.position;
+        dist = Vector3.Distance(this.transform.position, player.transform.position);
+
+        if(dist < 20.0f)
+        {
+            agent.destination = player.transform.position;
+        }
+        else
+        {
+            agent.destination = agent.transform.position;
+        }
     }
 }

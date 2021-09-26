@@ -15,6 +15,16 @@ public class DestroyOrb : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(this.gameObject);
         }
+        if (collision.gameObject.tag == "BlueEnemy" && this.gameObject.tag == "BlueOrbThrowable")
+        {
+            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
+        }
+        if (collision.gameObject.tag == "GreenEnemy" && this.gameObject.tag == "GreenOrbThrowable")
+        {
+            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
