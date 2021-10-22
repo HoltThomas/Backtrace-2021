@@ -16,6 +16,7 @@ TagManager:
   - BlueOrbThrowable
   - BlueEnemy
   - GreenEnemy
+  - Lava
   layers:
   - Default
   - TransparentFX

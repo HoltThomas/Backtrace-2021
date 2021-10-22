@@ -19,7 +19,7 @@ public class ChasePlayer : MonoBehaviour
     {
         dist = Vector3.Distance(this.transform.position, player.transform.position);
 
-        if(dist < 20.0f)
+        if(dist < 40.0f)
         {
             agent.destination = player.transform.position;
         }
